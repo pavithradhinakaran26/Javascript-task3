@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+     <H1>Array Methods</h1>
+
+    <script>
+        //1. Array filter 
+        let name =['pavithra', 'priya','mithra'];
+        let result = name.filter((name)=>name.length >5); 
+        console.log(result);
+         
+        // 2.Array find
+        const numbers = [5, 30, 9, 70, 44];
+        const find = numbers.find(num => num > 10);
+        console.log(find); 
+       
+        // 3.Array push
+        let animals=['dog','cat'] 
+        animals.push('Lion') 
+        console.log(animals)
+        
+        //4. Array pop
+        let Birds=['parrot','peacock']
+        Birds.pop('Eagle')
+        console.log(Birds)
+
+        // 5.Array slice
+        let fruit=['apple','banana','orange','mango','pineapple']
+          let slicedfruit = fruit.slice(4);
+          console.log(slicedfruit);
+          
+        // 6.Array Values
+         let arr = ['a', 'b', 'c'];
+          let iterator = arr.values();
+         for (let value of iterator) {
+         console.log(value);
+} 
+        // 7.Array shift
+        let number=[2,3,6,8]
+
+       number.shift();
+       console.log(number);
+        // 8 Array unshift
+        let num=[2,3,6,8] 
+       num.unshift(1);
+       console.log(num);
+    
+       //9.Array at
+       let letter=['pavithra','mithra','vino','lavanya']
+       console.log(letter.at(3))
+       console.log(letter.at(-2))
+      //  10.Array sort
+       let fruits = ["apple", "orange", "banana", "grape"];
+       fruits.sort();
+       console.log(fruits);
+          
+         
+
+    </script>
+ 
+</body>
+</html>
+
+
